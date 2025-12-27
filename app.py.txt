@@ -1,0 +1,28 @@
+import streamlit as st
+
+st.set_page_config(page_title="Customer Support Chatbot")
+
+st.title("🤖 Customer Support Chatbot")
+st.write("Ask questions related to orders, refunds, or customer support.")
+
+faqs = {
+    "order": "Your order is currently being processed.",
+    "refund": "Refunds are processed within 5 to 7 business days.",
+    "cancel": "Orders can be cancelled within 24 hours.",
+    "support": "You can contact support at support@example.com.",
+    "hours": "Support is available from 9 AM to 6 PM, Monday to Friday."
+}
+
+def chatbot_response(user_input):
+    user_input = user_input.lower()
+    for key in faqs:
+        if key in user_input:
+            return faqs[key]
+    return "Sorry, I couldn't understand your query. Please contact support."
+
+user_input = st.text_input("Type your question here")
+
+if st.button("Send"):
+    if user_input:
+        response = chatbot_response(user_input)
+        st.write("🤖 Bot:", response)

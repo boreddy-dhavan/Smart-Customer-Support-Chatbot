@@ -1,0 +1,25 @@
+# Internship Project Report
+
+## Project Title
+Smart Customer Support Chatbot
+
+## Objective
+To develop a web-based chatbot that can handle basic customer support queries
+and provide instant responses using predefined logic.
+
+## Tools & Technologies
+- Python
+- Streamlit
+
+## Project Description
+The chatbot answers frequently asked questions related to order status, refunds,
+order cancellation, and support availability. A fallback response is provided for
+unknown queries.
+
+## Outcome
+The project successfully demonstrates how chatbots can improve customer support
+efficiency by automating common queries.
+
+## Conclusion
+This chatbot can be extended further by integrating machine learning or NLP models
+to handle more complex conversations.
